@@ -13,8 +13,11 @@ public class CompareProjectsTest extends BaseClass {
 		SearchbyParameters test1 = new SearchbyParameters(driver);
 		test1.enterLocality("Baner", "Baner");
 		CompareProjectsPage test = new CompareProjectsPage(driver);
-		test.compareprojectA("checkbox-zenistry-b");
-		test.compareprojectB();
+		String pro1 =test.compareprojectA();
+		String pro2 =test.compareprojectB();
+		System.out.println(pro1 +" "+pro2);
 		test.goToComparePage();
+		test.verifyRedirectedPageProjectValues(pro1,pro2);
+		
 	}
 }

@@ -86,7 +86,7 @@ public class ReusableUtility {
 
 		scrollBy(-1000);
 
-		wait(500);
+		wait(3000);
 
 		Square(we);
 

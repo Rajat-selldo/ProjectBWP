@@ -10,10 +10,8 @@ public class LoginTest extends BaseClass {
 	@Test
 	public void logIn() throws InterruptedException {
 		LoginPage login = new LoginPage(driver);
-		login.clickonLogIn();
-		// getting "org.openqa.selenium.ElementClickInterceptedException" on the line 13 
-		
-		login.enterPhonenumber("411");
+		login.clickonLogIn();		
+		login.enterPhonenumber("788");
 		login.clickNextbtn();
 
 	}

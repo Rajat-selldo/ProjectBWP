@@ -29,6 +29,15 @@ public class LoginPage extends ReusableUtility {
 
 	@FindBy(how = How.XPATH, using = "//span[contains(text(), 'Next')]")
 	private WebElement clickNext;
+	
+	@FindBy(how = How.XPATH, using = "//input[@name='loginPhoneOTP']")
+	private WebElement enterOTP;
+	
+	@FindBy(how = How.XPATH, using = "//span[contains(text(), 'Continue')]")
+	private WebElement clickContinue;
+	
+	@FindBy(how = How.XPATH, using = "//button[contains(text(), 'Resend OTP')]")
+	private WebElement resendOTP;
 
 	public void clickonLogIn() throws InterruptedException {
 		Thread.sleep(6000);
@@ -41,17 +50,31 @@ public class LoginPage extends ReusableUtility {
 
 	public void clickNextbtn() throws InterruptedException {
 		jsClick(clickNext);	
+		wait(3000);
 		
-		 // Locate the error message element
-        WebElement errorMessageElement = driver.findElement(By.xpath("//div[@class='text-danger error-msg']"));
-
-        // Verify that the error message is displayed
-        Assert.assertTrue(errorMessageElement.isDisplayed(), "Error message is not displayed.");
-
-        // Verify that the error message text matches the expected value
-        String actualErrorMessage = errorMessageElement.getText();
-        String expectedErrorMessage = "Invalid phone number format";
-        Assert.assertEquals(actualErrorMessage, expectedErrorMessage, "Error message text does not match.");
+//		 // Locate the error message element
+//        WebElement errorMessageElement = driver.findElement(By.xpath("//div[@class='text-danger error-msg']"));
+//
+//        // Verify that the error message is displayed
+//        Assert.assertTrue(errorMessageElement.isDisplayed(), "Error message is not displayed.");
+//
+//        // Verify that the error message text matches the expected value
+//        String actualErrorMessage = errorMessageElement.getText();
+//        String expectedErrorMessage = "Invalid phone number format";
+//        Assert.assertEquals(actualErrorMessage, expectedErrorMessage, "Error message text does not match.");
 
 	}
+	
+	public void enterOtp() {
+		waitUntilVisibility(enterOTP).sendKeys("000000");
+	}
+	
+	public void clickContinue() {
+		waitUntilVisibility(clickContinue).click();
+	}
+	
+	public void resendOTP() {
+		waitUntilClickable(resendOTP).click();
+	}
+	
 }

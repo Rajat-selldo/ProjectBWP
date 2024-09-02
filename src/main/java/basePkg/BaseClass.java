@@ -17,7 +17,7 @@ public class BaseClass {
 	public float[] pixels;
 
 	@BeforeMethod
-	public void steup() {
+	public void setup() {
 		pixels = getCurrentScreenPixels();
 		ChromeOptions options = new ChromeOptions();
 		// ================ Zoom =================

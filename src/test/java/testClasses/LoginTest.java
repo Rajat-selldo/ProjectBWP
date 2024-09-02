@@ -11,8 +11,11 @@ public class LoginTest extends BaseClass {
 	public void logIn() throws InterruptedException {
 		LoginPage login = new LoginPage(driver);
 		login.clickonLogIn();		
-		login.enterPhonenumber("788");
+		login.enterPhonenumber("8956920329");
 		login.clickNextbtn();
+		
+		login.enterOtp();
+		login.clickContinue();
 
 	}
 

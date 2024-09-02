@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-29T09:03:51 IST" name="Default suite" finished-at="2024-08-29T09:04:17 IST" duration-ms="26601">
+  <suite started-at="2024-09-02T15:35:21 IST" name="Default suite" finished-at="2024-09-02T15:35:29 IST" duration-ms="8311">
     <groups>
     </groups>
-    <test started-at="2024-08-29T09:03:51 IST" name="Default test" finished-at="2024-08-29T09:04:17 IST" duration-ms="26601">
-      <class name="testClasses.CompareProjectsTest">
-        <test-method is-config="true" signature="steup()[pri:0, instance:testClasses.CompareProjectsTest@2aceadd4]" started-at="2024-08-29T09:03:51 IST" name="steup" finished-at="2024-08-29T09:03:54 IST" duration-ms="3275" status="PASS">
+    <test started-at="2024-09-02T15:35:21 IST" name="Default test" finished-at="2024-09-02T15:35:29 IST" duration-ms="8311">
+      <class name="testClasses.FiltersTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testClasses.FiltersTest@2aceadd4]" started-at="2024-09-02T15:35:21 IST" name="setup" finished-at="2024-09-02T15:35:26 IST" duration-ms="5311" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- steup -->
-        <test-method signature="compareProjects()[pri:0, instance:testClasses.CompareProjectsTest@2aceadd4]" started-at="2024-08-29T09:03:54 IST" name="compareProjects" finished-at="2024-08-29T09:04:17 IST" duration-ms="23282" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="projectStatus()[pri:0, instance:testClasses.FiltersTest@2aceadd4]" started-at="2024-09-02T15:35:26 IST" name="projectStatus" finished-at="2024-09-02T15:35:29 IST" duration-ms="2936" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- compareProjects -->
-      </class> <!-- testClasses.CompareProjectsTest -->
+        </test-method> <!-- projectStatus -->
+      </class> <!-- testClasses.FiltersTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

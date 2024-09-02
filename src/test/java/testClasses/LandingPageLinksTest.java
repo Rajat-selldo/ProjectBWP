@@ -20,7 +20,8 @@ public class LandingPageLinksTest extends BaseClass {
 	public void ExploreMore() {
 		LandingPageLinks view = new LandingPageLinks(driver);
 //		view.localitiesInPune();
-		view.localityListSelection("Balewadi");
+//		view.localityListSelection("Balewadi");
+		view.readyMoveInSection();
 	}
 
 }

@@ -20,6 +20,11 @@ public class FiltersTest extends BaseClass {
 		filters.selectValueFromPossessionList(
 				"//button[text()='Possession Status']//parent::h2//parent::div//a[@class='btn btn-outline-secondary me-2 mb-2 ']",
 				"In 6 months");
+		filters.budgetSliders();
+		filters.openCarpetArea();
+		filters.carpetAreaSliders();
+		filters.clearAllFilters();
+
 	}
 
 }
